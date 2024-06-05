@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image_service {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.servicos {
+    margin-top: 20px;
+    padding: 0;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 600px;
+}
+
+.servicos li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .servicos {
+        font-size: 0.9rem;
+    }
+
+    .image_service {
+        max-height: 800px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicos {
+        font-size: 0.8rem;
+    }
+
+    .image_service {
+        max-height: 600px;
+    }
+}

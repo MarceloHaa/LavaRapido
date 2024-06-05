@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: rgb(32, 162, 238);
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.item li a {
+    color: rgb(32, 162, 238);
+    text-decoration: none;
+}
+.item a:hover {
+    color: rgb(30, 108, 153);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    color: rgb(30, 108, 153);
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(32, 162, 238);
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .item {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: -20px;
+        background-color: black;
+        align-items: end;
+    }
+
+    .item.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
